@@ -11,6 +11,14 @@ A simple ecommerce website created using React Class Components, Context API, Gr
 - Quick Shop Functionality (Add an item to cart with default attributes)
 - Currency Switcher
 
+## Important
+
+Please use the following command to install all relevant packages:
+
+### `npm install --force`
+
+The force flag is needed as I am using some specific versions of packages that might be conflicting with each other.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -23,21 +31,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-Please use the following command to install all relevant packages:
-
-### `npm install --force`
-
-The force flag is needed as I am using some specific versions of packages that might be conflicting with each other.
-
-## Website Images
+## Project Images
 
 ### PLP
 
-<img src="https://i.ibb.co/5kKwnsQ/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
+<img src="https://i.ibb.co/1MzjdRC/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
 
 ### PDP
 
-<img src="https://i.ibb.co/CB6mPwk/PDP.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/fM9qDXh/PDP.png" width="100%" height="auto" alt="PDP" border="0">
 
 ### Cart Page
 
