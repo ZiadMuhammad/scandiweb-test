@@ -1,6 +1,6 @@
-# A simple ecommerce website created using React Class Components, Context API, GraphQL, and Styled Components
+# Scandiweb Initial Test Task Submission by Ziad Muhammad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple ecommerce website created using React Class Components, Context API, GraphQL, and Styled Components
 
 ## Website Features:
 
