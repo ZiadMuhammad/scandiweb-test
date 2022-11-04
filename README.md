@@ -9,6 +9,11 @@ A simple ecommerce website created using React Class Components, Context API, Gr
 - Cart Page
 - Cart Overlay
 - Quick Shop Functionality (Add an item to cart with default attributes)
+- Currency Switcher
+
+### PLP
+
+<img src="https://i.ibb.co/5kKwnsQ/PLP.png" alt="PLP" border="0" />
 
 ## Available Scripts
 
