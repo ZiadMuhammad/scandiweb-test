@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 import './App.css';
+import Navbar from './components/Navbar';
+import ProductsContainer from './components/ProductsContainer';
+import CatNameHeader from './components/shared/CatNameHeader.styled';
+import CartPage from './pages/CartPage';
+import { Route, Switch } from 'react-router-dom';
+import CategoryPage from './pages/CategoryPage';
+import CartContext from './context/CurrencyContext';
+import CurrencySelector from './components/CurrencySelector';
+import ProductPage from './pages/ProductPage';
+import Cart from './context/CartContext';
+import Currency from './context/CurrencyContext';
+import CartOverlay from './components/CartOverlay';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' });
+
+export default class App extends Component {
+  render() {
+    return (
+      <ApolloProvider client={client}>
+        <Cart>
+          <Currency>
+            <Navbar />
+            <CurrencySelector />
+            <Switch>
+              <Route exact path="/" component={ CategoryPage } />
+              <Route exact path="/cart" component={ CartPage } />
+              <Route exact path="/:categoryName" render={ (props) => <CategoryPage {...props} /> }/>
+              <Route path="/products/:productId" render={ (props) => <ProductPage {...props} /> }/>
+            </Switch>
+            {ReactDOM.createPortal(<CartOverlay />, document.getElementById("portal-root"))}
+
+          </Currency>
+        </Cart>
+      </ApolloProvider>
+    )
+  }
 }
-
-export default App;
