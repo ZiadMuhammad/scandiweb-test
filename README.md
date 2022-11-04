@@ -13,7 +13,7 @@ A simple ecommerce website created using React Class Components, Context API, Gr
 
 ### PLP
 
-<img src="https://i.ibb.co/5kKwnsQ/PLP.png" alt="PLP" border="0" />
+<img src="https://i.ibb.co/5kKwnsQ/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
 
 ## Available Scripts
 
