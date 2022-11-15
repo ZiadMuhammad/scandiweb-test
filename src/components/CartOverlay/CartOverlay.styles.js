@@ -5,7 +5,7 @@ export const CartScreen = styled.div`
     flex-direction: column;
     position: absolute;
     @media (max-width: 1920px) {
-        width: 18%;
+        width: 325px;
         height: 70%;   
     }
     @media (max-width: 1366px) {
