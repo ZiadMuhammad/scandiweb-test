@@ -39,16 +39,16 @@ You may also see any lint errors in the console.
 
 ### PDP
 
-<img src="https://i.ibb.co/0s7b53q/PLP.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/sqs7tVD/PDP.png" width="100%" height="auto" alt="PDP" border="0">
 
 ### Cart Page
 
-<img src="https://i.ibb.co/TcG8JgH/Cart-Page.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/3FKRT4w/cart-page.png" width="100%" height="auto" alt="PDP" border="0">
 
 ### Cart Overlay
 
-<img src="https://i.ibb.co/vdvm7Sk/Cart-Overlay.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/TRnbZqb/cart-overlay.png" width="100%" height="auto" alt="PDP" border="0">
 
 ### Currency Switcher
 
-<img src="https://i.ibb.co/QbQ2zMN/Currency.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/PQ0kjJX/currency.png" width="100%" height="auto" alt="PDP" border="0">
