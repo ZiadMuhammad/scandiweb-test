@@ -35,7 +35,7 @@ You may also see any lint errors in the console.
 
 ### PLP
 
-<img src="https://i.ibb.co/1MzjdRC/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
+<img src="https://i.ibb.co/0s7b53q/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
 
 ### PDP
 
