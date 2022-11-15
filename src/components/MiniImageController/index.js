@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { ThemeConsumer } from 'styled-components';
-import { ImgBtn, ImgBtnLeft, ImgBtnRight, ProductImage } from './MiniImageController.styles'
+import { ImgBtnLeft, ImgBtnRight, ProductImage } from './MiniImageController.styles'
 
 export default class MiniImageController extends Component {
 constructor(props) {
@@ -18,10 +17,10 @@ getPrevImg = () => {
 render() {
     return (
       <>
-        <ProductImage src={ this.props.gallery[this.state.count] } />
+        <ProductImage isModal={ this.props.isModal } src={ this.props.gallery[this.state.count] } />
         { this.props.gallery.length > 1 && this.props.isModal !== true ? <>
-            <ImgBtnLeft onClick={() => this.getNextImg()}><img src="https://i.ibb.co/BZXrkhZ/Vector-1.png"/></ImgBtnLeft>
-            <ImgBtnRight onClick={() => this.getPrevImg()}><img src="https://i.ibb.co/BZXrkhZ/Vector-1.png"/></ImgBtnRight>
+            <ImgBtnLeft onClick={() => this.getNextImg()}><img alt="Product" src="https://i.ibb.co/BZXrkhZ/Vector-1.png"/></ImgBtnLeft>
+            <ImgBtnRight onClick={() => this.getPrevImg()}><img alt="Product" src="https://i.ibb.co/BZXrkhZ/Vector-1.png"/></ImgBtnRight>
         </> : <></>}
       </>
     )

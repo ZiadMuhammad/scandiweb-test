@@ -3,7 +3,6 @@ import ProductCard from '../ProductCard'
 import { CenterProducts, ContainProducts } from './ProductsContainer.styles'
 import { Query } from 'react-apollo';
 import { GET_ALL_PRODUCTS, GET_PRODUCTS } from '../../utils/gql-request-handler';
-import { NavLinkHolder } from '../Navbar/Navbar.styles';
 
 export default class ProductsContainer extends Component {
   render() {

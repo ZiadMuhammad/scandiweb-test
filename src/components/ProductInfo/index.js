@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 import { Query } from 'react-apollo'
 import { CurrencyConsumer } from '../../context/CurrencyContext'
 import { GET_PRODUCT } from '../../utils/gql-request-handler'
@@ -12,7 +12,7 @@ import { ProductSubtitle } from '../shared/ProductSubtitle.styled'
 import { ProductTitle } from '../shared/ProductTitle.styled'
 import { CenterFlex, ProductDetails, ProductInfoContainer } from './ProductInfo.styles'
 import Parser from 'html-react-parser';
-import { CartConsumer, CartContext } from '../../context/CartContext'
+import { CartConsumer } from '../../context/CartContext'
 
 
 export default class ProductInfo extends PureComponent {
@@ -22,9 +22,10 @@ export default class ProductInfo extends PureComponent {
   }
   onCompletedHandler = (data) => {
     const selectedAttributes = {}
-    {data.product.attributes.map((attribute, index) => {
+    data.product.attributes.map((attribute, index) => {
       selectedAttributes[attribute.id] = attribute.items[0].value;
-    })}
+      return null;
+    })
 
     this.setState({ currentProduct: { productId: this.props.productId, selectedAttributes: selectedAttributes, price: data.product.prices } });
   }

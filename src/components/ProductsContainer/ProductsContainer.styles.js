@@ -13,5 +13,5 @@ export const ContainProducts = styled.div`
     width: 90%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: flex-center;
 `

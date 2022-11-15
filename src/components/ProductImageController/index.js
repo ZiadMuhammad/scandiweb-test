@@ -14,11 +14,11 @@ export default class ProductImageController extends Component {
       <ImageController>
         <SelectableImages>
             {this.props.gallery.map((currentImg, index) => {
-                return <img key={ index } onClick={() => this.changeImage(index)} src={currentImg} />
+                return <img alt="gallery" key={ index } onClick={() => this.changeImage(index)} src={currentImg} />
             })}
         </SelectableImages>
         <SelectedImage>
-            <img src={this.state.chosenImg}/>
+            <img alt="selected" src={this.state.chosenImg}/>
         </SelectedImage>
       </ImageController>
     )

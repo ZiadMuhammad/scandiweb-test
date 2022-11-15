@@ -2,15 +2,17 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
     position: relative;
-    height: 400px;
-    flex: 0 0 29%;
-    margin: 1% 2.1%;
+    height: 450px;
+    flex: 0 0 25%;
+    margin: 1% 4.1%;
     cursor: pointer;
 
     & img {
+        object-fit: contain;
+        object-position: center;
         margin: 3%;
         width: 95%;
-        height: 300px;
+        height: 350px;
     }
 
     & p {
@@ -22,8 +24,8 @@ export const Card = styled.div`
         position: absolute;
         top: 73%;
         left: 85%;
-        width: 11%;
-        height: 10%;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
         border: none;
         background-color: #5ECE7B;
@@ -36,8 +38,11 @@ export const Card = styled.div`
             display: block;
 
             & img {
-                width: 50%;
-                height: 50%;
+                position: relative;
+                top: -2%;
+                left: -2%;
+                object-fit: contain;
+                height: 20px;
             }
         }
     }
@@ -63,6 +68,7 @@ export const OutOfStockText = styled.h2`
     position: absolute;
     left: 50%;
     top: 40%;
+    font-size: 20px;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     opacity: 0.7;

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import { AttributeTitle } from '../shared/AttributeTitle.styled'
-import { AttributeContainer, Color, ColoredAttribute, NormalAttribute, NormalAttributes, SelectedAttribute, SelectedColor } from './ProductAttribute.styles'
+import { AttributeContainer, Color, ColoredAttribute, NormalAttribute, SelectedAttribute, SelectedColor } from './ProductAttribute.styles'
 
 export default class ProductAttribute extends Component {
   render() {
     if(this.props.attribute.type === "swatch") {
         return <>
-        <AttributeTitle isModal={ this.props.isModal }>{this.props.attribute.name}</AttributeTitle>
+        <AttributeTitle isModal={ this.props.isModal }>{this.props.attribute.name}:</AttributeTitle>
         <AttributeContainer>
             {this.props.attribute.items.map((item, index) => {
                 if(item.value === this.props.selectedAttribute) {
@@ -18,7 +18,7 @@ export default class ProductAttribute extends Component {
         </AttributeContainer></>
     } else {
         return(<>
-            <AttributeTitle>{this.props.attribute.name}</AttributeTitle>
+            <AttributeTitle isModal={ this.props.isModal }>{this.props.attribute.name}:</AttributeTitle>
             <AttributeContainer>
             {this.props.attribute.items.map((item, index) => {
                 if(item.value === this.props.selectedAttribute) {

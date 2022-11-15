@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 import ProductsContainer from '../components/ProductsContainer'
 import CatNameHeader from '../components/shared/CatNameHeader.styled'
 

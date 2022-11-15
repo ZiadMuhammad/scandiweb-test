@@ -37,7 +37,7 @@ export default class Cart extends Component {
   getTotalItems = () => {
     let totalItems = 0;
     Object.entries(this.state).forEach(entry => {
-        const [key, val] = entry;
+        const [, val] = entry;
         if(val) {
             totalItems += val.qty
         }
@@ -49,7 +49,7 @@ export default class Cart extends Component {
     let totalPrice = 0;
 
     Object.entries(this.state).forEach(entry => {
-        const [key, val] = entry;
+        const [, val] = entry;
         if(val) {
             totalPrice += val.qty * val.product.price[currencyIndex].amount;
         }

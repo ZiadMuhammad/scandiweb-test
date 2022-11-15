@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const AttributeContainer = styled.div`
-  margin-top: 5%;
+  margin-top: 4px;
   display: flex;
 `
 
 export const NormalAttribute = styled.div`
-  height: ${props => (props.isModal ? "30px" : "40px")};
-  width: ${props => (props.isModal ? "30px" : "50px")};
-  font-size: ${props => (props.isModal ? "0.65rem" : "0.85rem")};
+  height: ${props => (props.isModal ? "24px" : "45px")};
+  width: ${props => (props.isModal ? "29px" : "63px")};
+  font-size: ${props => (props.isModal ? "10px" : "0.85rem")};
   border: 1px solid #1D1F22;
   padding: 2% 8%;
-  margin-right: 4%;
+  margin-right: ${props => (props.isModal ? "6%" : "2%")};
   position: relative;
 
   &:hover {
@@ -28,12 +28,12 @@ export const NormalAttribute = styled.div`
 `
 
 export const SelectedAttribute = styled.div`
-  height: ${props => (props.isModal ? "30px" : "40px")};
-  width: ${props => (props.isModal ? "30px" : "50px")};
-  font-size: ${props => (props.isModal ? "0.65rem" : "0.85rem")};
+  height: ${props => (props.isModal ? "24px" : "45px")};
+  width: ${props => (props.isModal ? "29px" : "63px")};
+  font-size: ${props => (props.isModal ? "10px" : "0.85rem")};
   border: 1px solid #1D1F22;
   padding: 2% 8%;
-  margin-right: 4%;
+  margin-right: ${props => (props.isModal ? "6%" : "2%")};
   background-color: black;
   color: white;
   position: relative;
@@ -48,9 +48,8 @@ export const SelectedAttribute = styled.div`
 
 export const ColoredAttribute = styled.div`
     position: relative;
-    width: ${props => (props.isModal ? "20px" : "30px")};
-    height: ${props => (props.isModal ? "20px" : "30px")};
-    font-size: 0.85rem;
+    width: ${props => (props.isModal ? "16px" : "32px")};
+    height: ${props => (props.isModal ? "16px" : "32px")};
     margin-right: 4%;
 
     &:hover {
@@ -71,9 +70,8 @@ export const Color = styled.div`
 
 export const SelectedColor = styled.div`
     position: relative;
-    width: ${props => (props.isModal ? "20px" : "30px")};
-    height: ${props => (props.isModal ? "20px" : "30px")};
-    font-size: 0.85rem;
+    width: ${props => (props.isModal ? "16px" : "32px")};
+    height: ${props => (props.isModal ? "16px" : "32px")};
     border: 1px solid green;
     margin-right: 4%;
 `

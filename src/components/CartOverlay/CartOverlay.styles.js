@@ -4,8 +4,14 @@ export const CartScreen = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 32%;
-    height: 90%;
+    @media (max-width: 1920px) {
+        width: 18%;
+        height: 70%;   
+    }
+    @media (max-width: 1366px) {
+        width: 23%;
+        height: 80%;   
+    }
     right: 5%;
     top: 8%;
     z-index: 1000;
@@ -17,13 +23,15 @@ export const OverlayTitle = styled.div`
     background-color: white;
 
     & p {
+        font-weight: bold;
         position: absolute;
         top: 5%;
         left: 5%;
-        font-size: 22px;
+        font-size: 16px;
 
         & span {
-            font-weight: bold;
+            font-size: 16px;
+            font-weight: normal;
         }
     }
 `
@@ -32,7 +40,7 @@ export const CartContent = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 65%;
+    height: 55%;
     overflow-y: scroll;
     background-color: white;
 `
@@ -48,7 +56,8 @@ export const TotalPriceContainer = styled.div`
     background-color: white;
 
     & p {
-        font-size: 20px;
+        font-weight: bold;
+        font-size: 16px;
     }
 
     & span {
@@ -59,8 +68,8 @@ export const TotalPriceContainer = styled.div`
 export const ButtonContainer = styled.div`
     display: flex;
     justify-content: space-around;
-    padding-top: 2%;
-    height: 10%;
+    padding-top: 20px;
+    height: 80px;
     background-color: white;
 `
 
@@ -72,6 +81,7 @@ export const GreenBtn = styled.button`
   padding: 2px 5px;
   border: none;
   cursor: pointer;
+  font-size: small;
 `
 
 export const BagBtn = styled.a`
@@ -104,7 +114,8 @@ export const linkStyle = {
     padding: "2px 5px",
     border: "1px solid #1D1F22",
     backgroundColor: "white",
-    cursor: "pointer"
+    cursor: "pointer",
+    fontSize: "small"
 };
 
 export const TextInLink = styled.p`

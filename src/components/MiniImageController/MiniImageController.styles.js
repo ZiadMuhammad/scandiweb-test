@@ -1,13 +1,15 @@
 import styled from 'styled-components'
 
 export const ProductImage = styled.img`
-    width: 100%;
     height: 100%;
+    width: ${props => (props.isModal ? "121px" : "200px")};
+    object-fit: contain;
+    object-position: top;
 `
 
 export const ImgBtnLeft = styled.button`
   position: absolute;
-  top: 80%;
+  top: 86%;
   right: 10%;
   width: 20px;
   height: 20px;
@@ -27,8 +29,8 @@ export const ImgBtnRight = styled.button`
   width: 20px;
   height: 20px;
 
-  top: 80%;
-  left: 55%;
+  top: 86%;
+  left: 65%;
   background-color: #000000BA;
   border: none;
 

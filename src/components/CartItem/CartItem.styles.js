@@ -13,8 +13,7 @@ export const ProductDetails = styled.div`
 
 export const QtyImageContainer = styled.div`
     display: flex;
-    width: 180px;
-    height: 220px;
+    width: ${props => (props.isModal ? "138px" : "250px")};
 `
 
 export const QtyFlex = styled.div`
@@ -26,7 +25,8 @@ export const QtyFlex = styled.div`
 `
 
 export const SampleFlexItem = styled.div`
-    height: 20%;
+    height: ${props => (props.isModal ? "24px" : "45px")};
+    width: ${props => (props.isModal ? "24px" : "45px")};
     border: 1px solid #1D1F22;
     cursor: pointer;
     position: relative;
@@ -49,13 +49,19 @@ export const ImgPlaceHolder = styled.div`
 `
 
 export const CartItemTitle = styled.h2`
-    font-size: ${props => (props.isModal ? "18px" : "")};
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+`
+
+export const CartItemTitleModal = styled.p`
+    font-size: 16px;
     margin-top: 0.5%;
-    margin-bottom: 0.5%;
+    margin-bottom: 5%;
 `
 
 export const CartItemSubtitle = styled.p `
     margin-top: 0.5%;
     margin-bottom: 5%;
-    font-size: ${props => (props.isModal ? "18px" : "22px")};
+    font-size: ${props => (props.isModal ? "16px" : "30px")};
 `

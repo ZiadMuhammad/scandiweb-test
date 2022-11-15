@@ -24,7 +24,7 @@ export default class CartPage extends Component {
                   });
 
                   return <>
-                  <CartTitle>{"Cart (" + cartValue.getTotalItems() + " items)"}</CartTitle>
+                  <CartTitle>Cart</CartTitle>
                   <CartContainer products={ products } totalItems={ cartValue.getTotalItems() } taxPrice= {value.state.currentSymbol + (cartValue.getTotalPrice(value.state.currency) * 0.21).toFixed(2)} totalPrice={value.state.currentSymbol + cartValue.getTotalPrice(value.state.currency)} />
                   </>
                 }

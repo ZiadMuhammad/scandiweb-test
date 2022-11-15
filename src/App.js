@@ -4,18 +4,14 @@ import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import './App.css';
 import Navbar from './components/Navbar';
-import ProductsContainer from './components/ProductsContainer';
-import CatNameHeader from './components/shared/CatNameHeader.styled';
 import CartPage from './pages/CartPage';
 import { Route, Switch } from 'react-router-dom';
 import CategoryPage from './pages/CategoryPage';
-import CartContext from './context/CurrencyContext';
 import CurrencySelector from './components/CurrencySelector';
 import ProductPage from './pages/ProductPage';
 import Cart from './context/CartContext';
 import Currency from './context/CurrencyContext';
 import CartOverlay from './components/CartOverlay';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 const client = new ApolloClient({ uri: 'http://localhost:4000/graphql' });
 
