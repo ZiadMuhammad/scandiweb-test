@@ -39,7 +39,7 @@ You may also see any lint errors in the console.
 
 ### PDP
 
-<img src="https://i.ibb.co/fM9qDXh/PDP.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.ibb.co/0s7b53q/PLP.png" width="100%" height="auto" alt="PDP" border="0">
 
 ### Cart Page
 
