@@ -51,4 +51,4 @@ You may also see any lint errors in the console.
 
 ### Currency Switcher
 
-<img src="https://i.ibb.co/PQ0kjJX/currency.png" width="100%" height="auto" alt="PDP" border="0">
+<img src="https://i.postimg.cc/ZqYgTwrW/currency.png" width="100%" height="auto" alt="PDP" border="0">
