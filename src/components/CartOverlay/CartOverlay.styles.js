@@ -9,7 +9,7 @@ export const CartScreen = styled.div`
         height: 70%;   
     }
     @media (max-width: 1366px) {
-        width: 23%;
+        width: 325px;
         height: 80%;   
     }
     right: 5%;
