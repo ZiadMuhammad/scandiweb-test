@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Scandiweb Initial Test Task Submission by Ziad Muhammad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple ecommerce website created using React Class Components, Context API, GraphQL, and Styled Components
+
+## Website Features:
+
+- PLP (Product Listing Page)
+- PDP (Product Description Page)
+- Cart Page
+- Cart Overlay
+- Quick Shop Functionality (Add an item to cart with default attributes)
+- Currency Switcher
+
+## Important
+
+Please use the following command to install all relevant packages:
+
+### `npm install --force`
+
+The force flag is needed as I am using some specific versions of packages that might be conflicting with each other.
 
 ## Available Scripts
 
@@ -14,57 +31,24 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+## Project Images
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PLP
 
-### `npm run build`
+<img src="https://i.ibb.co/1MzjdRC/PLP.png" width="100%" height="auto" alt="PLP" border="0" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### PDP
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="https://i.ibb.co/fM9qDXh/PDP.png" width="100%" height="auto" alt="PDP" border="0">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Cart Page
 
-### `npm run eject`
+<img src="https://i.ibb.co/TcG8JgH/Cart-Page.png" width="100%" height="auto" alt="PDP" border="0">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Cart Overlay
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://i.ibb.co/vdvm7Sk/Cart-Overlay.png" width="100%" height="auto" alt="PDP" border="0">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Currency Switcher
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img src="https://i.ibb.co/QbQ2zMN/Currency.png" width="100%" height="auto" alt="PDP" border="0">
